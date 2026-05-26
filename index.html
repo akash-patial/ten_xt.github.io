@@ -6,15 +6,17 @@
   <title>I’m Sorry ❤️</title>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap');
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background: linear-gradient(to bottom, #ffe4ec, #fff);
+      position: relative;
+      background: linear-gradient(135deg, #ffd6e7, #fff0f5, #ffffff);
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -24,11 +26,12 @@
     }
 
     .container {
+      backdrop-filter: blur(10px);
       max-width: 850px;
-      background: white;
-      border-radius: 25px;
+      background: rgba(255,255,255,0.92);
+      border-radius: 35px;
       overflow: hidden;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+      box-shadow: 0 20px 60px rgba(255, 77, 136, 0.25);
       position: relative;
     }
 
@@ -52,8 +55,10 @@
     }
 
     .overlay h1 {
+      font-family: 'Dancing Script', cursive;
+      text-shadow: 0 5px 20px rgba(0,0,0,0.5);
       color: white;
-      font-size: 60px;
+      font-size: 78px;
       text-align: center;
     }
 
@@ -63,12 +68,14 @@
     }
 
     .content h2 {
+      font-family: 'Dancing Script', cursive;
       color: #ff4d88;
       margin-bottom: 25px;
-      font-size: 34px;
+      font-size: 48px;
     }
 
     .content p {
+      font-weight: 400;
       color: #555;
       line-height: 1.9;
       font-size: 18px;
@@ -101,6 +108,7 @@
     }
 
     .btn {
+      box-shadow: 0 10px 30px rgba(255, 77, 136, 0.4);
       display: inline-block;
       margin-top: 35px;
       background: #ff4d88;
@@ -109,12 +117,12 @@
       border-radius: 50px;
       text-decoration: none;
       font-size: 20px;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
       background: #e63973;
-      transform: scale(1.05);
+      transform: scale(1.08) translateY(-3px);
     }
 
     .footer {
@@ -140,6 +148,7 @@
     }
 
     .heart {
+      filter: blur(0.3px);
       position: fixed;
       color: rgba(255, 77, 136, 0.4);
       animation: float 6s linear infinite;
@@ -256,7 +265,10 @@
     }
   </script>
 
+  <div style="position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:-2;">
+    <div style="position:absolute; width:300px; height:300px; background:#ff7aa2; border-radius:50%; filter:blur(120px); top:-50px; left:-50px; opacity:0.25;"></div>
+    <div style="position:absolute; width:300px; height:300px; background:#ffb3c7; border-radius:50%; filter:blur(120px); bottom:-80px; right:-50px; opacity:0.25;"></div>
+  </div>
+
 </body>
 </html>
-https://yourusername.github.io
-```
